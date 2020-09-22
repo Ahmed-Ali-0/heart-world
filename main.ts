@@ -1,10 +1,12 @@
-for (let index = 0; index < 5; index++) {
+input.onButtonPressed(Button.A, function () {
+    basic.showIcon(IconNames.Happy)
+})
+input.onButtonPressed(Button.B, function () {
     basic.showLeds(`
-        . . . . .
         . # . # .
-        . # # # .
-        . . # . .
         . . . . .
+        . . # . #
+        . # . # .
+        # . . . .
         `)
-    basic.showIcon(IconNames.Heart)
-}
+})
